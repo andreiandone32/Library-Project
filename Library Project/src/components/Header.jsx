@@ -143,7 +143,7 @@ export function Header() {
               textDecoration: "none",
             }}
           >
-             Library
+            Library
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages
@@ -171,12 +171,12 @@ export function Header() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Account">
+            <Tooltip title={user.firstName}>
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 {user ? (
                   <Avatar>
                     {user.firstName[0]}
-                    {user.lastName[0]}
+                    {user.firstName[0]}
                   </Avatar>
                 ) : (
                   <Avatar />
