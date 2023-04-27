@@ -1,5 +1,4 @@
 import React from "react";
-
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -33,7 +32,7 @@ export function Header() {
 
   const navigate = useNavigate();
 
-  console.log(user);
+ 
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -171,7 +170,7 @@ export function Header() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title={user.firstName}>
+            <Tooltip title="Your account">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 {user ? (
                   <Avatar>

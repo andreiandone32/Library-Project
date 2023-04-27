@@ -1,6 +1,9 @@
+import { Box, Typography } from "@mui/material";
 
 export default function () {
   return (
-   <div>Manage Books</div>
+    <Box>
+      <Typography variant="h3">Manange Books</Typography>
+    </Box>
   );
 }
